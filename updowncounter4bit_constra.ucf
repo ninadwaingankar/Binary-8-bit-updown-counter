@@ -1,0 +1,21 @@
+#Implementation constrains file for binary 4 bit updown counter
+#XILINX Spartan 6 Mini SP6 V2 FPGA
+# FPGAtechsolution
+
+#reset push button
+NET rst LOC = P17 | IOSTANDARD = LVCMOS33; 
+
+#up down status dip switch
+NET status LOC = P80 | IOSTANDARD = LVCMOS33; 
+
+#developed by Ninad Waingankar
+
+#12 mhz clock input
+NET clk LOC = P87 | IOSTANDARD = LVCMOS33; 
+
+#Counter output on LEDS of FPGA
+
+NET decimal(3) loc=p9 | IOSTANDARD = LVCMOS33;
+NET decimal(2) loc=p8 | IOSTANDARD = LVCMOS33;
+NET decimal(1) loc=p6 | IOSTANDARD = LVCMOS33; 
+NET decimal(0) loc=p5 | IOSTANDARD = LVCMOS33; 
